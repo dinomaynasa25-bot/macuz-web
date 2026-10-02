@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Macuz Importaciones — Paneles WPC, Pisos SPC y Muros Marmolados en Bolivia</title>
+<meta name="description" content="Paneles ripados WPC, pisos SPC y muros marmolados PVC de alta calidad. Envíos a todo Bolivia. Cotiza por WhatsApp.">
+<meta property="og:title" content="Macuz Importaciones — Revestimientos que transforman espacios">
+<meta property="og:description" content="Paneles WPC · Pisos SPC · Muros Marmolados PVC. Envíos a todo Bolivia.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= LOADER ================= -->
+<div class="loader" id="loader">
+  <svg class="loader-logo" viewBox="0 0 100 100">
+    <polygon points="50,10 90,80 10,80" fill="none" stroke="#E10600" stroke-width="2"/>
+    <polygon points="50,30 75,75 25,75" fill="none" stroke="#E10600" stroke-width="1.5"/>
+  </svg>
+  <div class="loader-bar"><span id="loaderProgress"></span></div>
+  <p class="loader-text">Cargando experiencia <span id="loaderPercent">0</span>%</p>
+</div>
+
+<!-- ================= CURSOR ================= -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- ================= BARRA ROJA SUPERIOR ================= -->
+<div class="top-bar"></div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#inicio" class="nav-logo">
+      <svg viewBox="0 0 60 60" class="logo-svg">
+        <polygon points="30,5 55,50 5,50" fill="#E10600"/>
+        <polygon points="30,20 45,45 15,45" fill="#0A0A0A"/>
+      </svg>
+      <div class="logo-text">
+        <strong>Macuz</strong>
+        <span>Importaciones</span>
+      </div>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#inicio" class="nav-link active">Inicio</a>
+      <a href="#productos" class="nav-link">Productos</a>
+      <a href="#colores" class="nav-link">Colores</a>
+      <a href="#instalacion" class="nav-link">Instalación</a>
+      <a href="#proyectos" class="nav-link">Proyectos</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+
+    <a href="https://wa.me/59176715659?text=Hola%20Macuz,%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener" class="nav-cta">
+      Cotizar por WhatsApp
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
+  <div class="swiper heroSwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <div class="slide-bg" style="background-image:url('img/b067-living.jpg')"></div>
+        <div class="slide-content">
+          <span class="slide-tag">PANEL B067 · NOGAL OSCURO</span>
+          <h1 class="slide-title">Revestimientos que <em>transforman</em> espacios</h1>
+          <p class="slide-desc">Diseño moderno · Resistente a la humedad · Instalación en minutos</p>
+          <div class="slide-buttons">
+            <a href="#productos" class="btn btn-primary">Ver catálogo</a>
+            <a href="https://wa.me/59176715659" target="_blank" class="btn btn-ghost">Cotizar ahora</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="slide-bg" style="background-image:url('img/dorado-sala.jpg')"></div>
+        <div class="slide-content">
+          <span class="slide-tag">PANEL DIS005-2 · DORADO</span>
+          <h1 class="slide-title">Color que <em>ilumina</em> tus ambientes</h1>
+          <p class="slide-desc">Acabado premium · Sin taladrar · Fácil de limpiar</p>
+          <div class="slide-buttons">
+            <a href="#productos" class="btn btn-primary">Ver catálogo</a>
+            <a href="https://wa.me/59176715659" target="_blank" class="btn btn-ghost">Cotizar ahora</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="slide-bg" style="background-image:url('img/negro-oficina.jpg')"></div>
+        <div class="slide-content">
+          <span class="slide-tag">PANEL 2028 · GRAFITO</span>
+          <h1 class="slide-title">Elegancia <em>atemporal</em> para tu hogar</h1>
+          <p class="slide-desc">Alta durabilidad · Fácil instalación · Diseño moderno</p>
+          <div class="slide-buttons">
+            <a href="#productos" class="btn btn-primary">Ver catálogo</a>
+            <a href="https://wa.me/59176715659" target="_blank" class="btn btn-ghost">Cotizar ahora</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="slide-bg" style="background-image:url('img/piso-spc.jpg')"></div>
+        <div class="slide-content">
+          <span class="slide-tag">PISOS SPC · D02 / HDS06</span>
+          <h1 class="slide-title">Pisos <em>flotantes</em> con manta IXPE integrada</h1>
+          <p class="slide-desc">100% resistente al agua · Aislante acústico · Sistema click</p>
+          <div class="slide-buttons">
+            <a href="#productos" class="btn btn-primary">Ver catálogo</a>
+            <a href="https://wa.me/59176715659" target="_blank" class="btn btn-ghost">Cotizar ahora</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="slide-bg" style="background-image:url('img/marmol.jpg')"></div>
+        <div class="slide-content">
+          <span class="slide-tag">MURO MARMOLADO DY054</span>
+          <h1 class="slide-title">Acabado <em>tipo mármol</em> sin el costo del mármol</h1>
+          <p class="slide-desc">5mm de grosor · Resistente a la humedad · Acabado mate premium</p>
+          <div class="slide-buttons">
+            <a href="#productos" class="btn btn-primary">Ver catálogo</a>
+            <a href="https://wa.me/59176715659" target="_blank" class="btn btn-ghost">Cotizar ahora</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination hero-pagination"></div>
+    <button class="hero-arrow hero-prev" aria-label="Anterior">‹</button>
+    <button class="hero-arrow hero-next" aria-label="Siguiente">›</button>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ================= MARQUEE BENEFICIOS ================= -->
+<section class="marquee-bar">
+  <div class="marquee-content">
+    <span>✦ Resistente a la humedad</span>
+    <span>✦ Alta durabilidad</span>
+    <span>✦ Fácil instalación</span>
+    <span>✦ Envíos a todo Bolivia</span>
+    <span>✦ Diseño moderno</span>
+    <span>✦ Resistente a la humedad</span>
+    <span>✦ Alta durabilidad</span>
+    <span>✦ Fácil instalación</span>
+    <span>✦ Envíos a todo Bolivia</span>
+    <span>✦ Diseño moderno</span>
+  </div>
+</section>
+
+<!-- ================= CATEGORÍAS ================= -->
+<section class="section categories" id="productos">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">CATÁLOGO</span>
+      <h2 class="section-title">Nuestros <em>productos</em></h2>
+      <p class="section-sub">Revestimientos de alta calidad para transformar cada espacio</p>
+    </div>
+
+    <div class="category-grid">
+
+      <article class="category-card reveal">
+        <div class="card-image">
+          <img src="img/b067-living.jpg" alt="Paneles Ripados WPC" loading="lazy">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <span class="card-count">8 colores disponibles</span>
+          <h3>Paneles Ripados WPC</h3>
+          <p>Resistentes a la humedad · Instalación sin taladrar</p>
+          <span class="card-link">Ver modelos →</span>
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="card-image">
+          <img src="img/piso-spc.jpg" alt="Pisos SPC" loading="lazy">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <span class="card-count">2 modelos</span>
+          <h3>Pisos Flotantes SPC</h3>
+          <p>100% resistente al agua · Manta IXPE integrada</p>
+          <span class="card-link">Ver modelos →</span>
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="card-image">
+          <img src="img/marmol.jpg" alt="Muros Marmolados PVC" loading="lazy">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <span class="card-count">Acabado premium</span>
+          <h3>Muros Marmolados PVC</h3>
+          <p>Aparencia tipo mármol · 5mm de grosor</p>
+          <span class="card-link">Ver modelos →</span>
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="card-image">
+          <img src="img/accesorios.jpg" alt="Esquineros y Accesorios" loading="lazy">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <span class="card-count">Acabado perfecto</span>
+          <h3>Esquineros y Accesorios</h3>
+          <p>Silicona estructural · Clips · Sellante</p>
+          <span class="card-link">Ver modelos →</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCTOS DESTACADOS ================= -->
+<section class="section featured">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">DESTACADOS</span>
+      <h2 class="section-title">Los más <em>vendidos</em></h2>
+    </div>
+  </div>
+
+  <div class="swiper featuredSwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="img/b067.jpg" alt="Panel B067" loading="lazy">
+            <span class="product-badge">Best seller</span>
+          </div>
+          <div class="product-info">
+            <span class="product-code">B067</span>
+            <h3>Panel Nogal Oscuro</h3>
+            <p class="product-specs">2.90m × 16cm · WPC</p>
+            <a href="https://wa.me/59176715659?text=Hola,%20quiero%20cotizar%20el%20panel%20B067" target="_blank" class="btn btn-small">Cotizar</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="swiper-slide">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="img/chi2.jpg" alt="Panel CHI2" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-code">CHI2</span>
+            <h3>Panel Blanco</h3>
+            <p class="product-specs">2.90m × 16cm · WPC</p>
+            <a href="https://wa.me/59176715659?text=Hola,%20quiero%20cotizar%20el%20panel%20CHI2" target="_blank" class="btn btn-small">Cotizar</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="swiper-slide">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="img/dis005.jpg" alt="Panel DIS005-2" loading="lazy">
+            <span class="product-badge">Nuevo</span>
+          </div>
+          <div class="product-info">
+            <span class="product-code">DIS005-2</span>
+            <h3>Panel Dorado</h3>
+            <p class="product-specs">2.90m × 16cm · WPC</p>
+            <a href="https://wa.me/59176715659?text=Hola,%20quiero%20cotizar%20el%20panel%20DIS005-2" target="_blank" class="btn btn-small">Cotizar</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="swiper-slide">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="img/2028.jpg" alt="Panel 2028" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-code">2028</span>
+            <h3>Panel Grafito</h3>
+            <p class="product-specs">2.90m × 16cm · WPC</p>
+            <a href="https://wa.me/59176715659?text=Hola,%20quiero%20cotizar%20el%20panel%202028" target="_blank" class="btn btn-small">Cotizar</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="swiper-slide">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="img/dy054.jpg" alt="Muro DY054" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-code">DY054</span>
+            <h3>Muro Mármol PVC</h3>
+            <p class="product-specs">2.44m × 1.22m · 5mm</p>
+            <a href="https://wa.me/59176715659?text=Hola,%20quiero%20cotizar%20el%20muro%20DY054" target="_blank" class="btn btn-small">Cotizar</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="swiper-slide">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="img/d02.jpg" alt="Piso D02" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-code">D02</span>
+            <h3>Piso SPC Roble</h3>
+            <p class="product-specs">1.22m × 0.18m · 4.5mm</p>
+            <a href="https://wa.me/59176715659?text=Hola,%20quiero%20cotizar%20el%20piso%20D02" target="_blank" class="btn btn-small">Cotizar</a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+    <div class="swiper-pagination featured-pagination"></div>
+  </div>
+</section>
+
+<!-- ================= COLORES ================= -->
+<section class="section colors" id="colores">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">PALETA</span>
+      <h2 class="section-title">Colores <em>disponibles</em></h2>
+      <p class="section-sub">Elegí el acabado perfecto para tu espacio</p>
+    </div>
+  </div>
+
+  <div class="marquee-colors">
+    <div class="marquee-colors-track" id="marqueeColors"></div>
+  </div>
+</section>
+
+<!-- ================= CALCULADORA ================= -->
+<section class="section calculator">
+  <div class="container calculator-container">
+    <div class="calc-text reveal">
+      <span class="section-tag">HERRAMIENTA</span>
+      <h2 class="section-title">¿Cuántos paneles <em>necesito</em>?</h2>
+      <p>Ingresá las medidas de tu pared y calculamos la cantidad exacta de paneles que necesitás. Sin complicaciones.</p>
+      <a href="https://wa.me/59176715659?text=Hola,%20necesito%20ayuda%20con%20el%20c%C3%A1lculo%20de%20paneles" target="_blank" class="btn btn-ghost">Ayuda por WhatsApp</a>
+    </div>
+
+    <div class="calc-box reveal">
+      <div class="calc-field">
+        <label>Ancho de la pared (metros)</label>
+        <input type="number" id="calcAncho" placeholder="Ej: 4" step="0.1" min="0.5">
+      </div>
+      <div class="calc-field">
+        <label>Alto de la pared (metros)</label>
+        <input type="number" id="calcAlto" placeholder="Ej: 2.5" step="0.1" min="0.5">
+      </div>
+      <div class="calc-field">
+        <label>Ancho del panel</label>
+        <select id="calcPanel">
+          <option value="0.16">16 cm</option>
+          <option value="0.15">15 cm</option>
+        </select>
+      </div>
+
+      <button class="btn btn-primary calc-btn" id="calcBtn">Calcular</button>
+
+      <div class="calc-result" id="calcResult">
+        <p class="calc-result-label">Necesitás aproximadamente</p>
+        <p class="calc-result-number"><span id="calcNumber">0</span></p>
+        <p class="calc-result-label">paneles de 2.90m</p>
+        <a href="https://wa.me/59176715659" target="_blank" class="btn btn-primary">Cotizar ahora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INSTALACIÓN ================= -->
+<section class="section installation" id="instalacion">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">INSTALACIÓN</span>
+      <h2 class="section-title">Cómo <em>instalar</em> paso a paso</h2>
+      <p class="section-sub">Mirá nuestros videos tutoriales y hacelo vos mismo</p>
+    </div>
+
+    <div class="video-grid">
+
+      <article class="video-card reveal">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_1"
+                  title="Instalación panel WPC"
+                  frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-info">
+          <span class="video-tag">TUTORIAL 01</span>
+          <h3>Cómo instalar paneles WPC en tu pared</h3>
+          <p>Paso a paso: medición, preparación y colocación sin taladrar.</p>
+        </div>
+      </article>
+
+      <article class="video-card reveal">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_2"
+                  title="Instalación piso SPC"
+                  frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-info">
+          <span class="video-tag">TUTORIAL 02</span>
+          <h3>Cómo instalar piso SPC con sistema click</h3>
+          <p>Sin pegamento, sin complicaciones, acabado profesional.</p>
+        </div>
+      </article>
+
+      <article class="video-card reveal">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_3"
+                  title="Instalación muro marmolado"
+                  frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-info">
+          <span class="video-tag">TUTORIAL 03</span>
+          <h3>Cómo instalar muro marmolado PVC</h3>
+          <p>Acabado premium tipo mármol en minutos.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="process">
+      <h3 class="process-title">El proceso completo</h3>
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <span class="step-num">01</span>
+          <h4>Mide tu pared</h4>
+          <p>Usá nuestra calculadora o tomá medidas manuales.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="step-num">02</span>
+          <h4>Prepará la superficie</h4>
+          <p>Limpiá y nivelá la pared. No necesita yeso perfecto.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="step-num">03</span>
+          <h4>Aplicá silicona + clips</h4>
+          <p>Sin taladrar. Sistema de fijación oculta.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="step-num">04</span>
+          <h4>Encajá y disfrutá</h4>
+          <p>Acabado profesional en minutos.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= ANTES / DESPUÉS ================= -->
+<section class="section before-after" id="proyectos">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">TRANSFORMACIONES</span>
+      <h2 class="section-title">Antes y <em>después</em></h2>
+      <p class="section-sub">Arrastrá la línea para ver la transformación</p>
+    </div>
+
+    <div class="ba-grid">
+
+      <div class="ba-card reveal">
+        <div class="ba-slider">
+          <img class="ba-before" src="img/antes1.jpg" alt="Antes" loading="lazy">
+          <div class="ba-after-wrap">
+            <img class="ba-after" src="img/despues1.jpg" alt="Después" loading="lazy">
+          </div>
+          <div class="ba-handle"><span>‹ ›</span></div>
+        </div>
+        <p class="ba-caption">Living con Panel B067 Nogal Oscuro</p>
+      </div>
+
+      <div class="ba-card reveal">
+        <div class="ba-slider">
+          <img class="ba-before" src="img/antes2.jpg" alt="Antes" loading="lazy">
+          <div class="ba-after-wrap">
+            <img class="ba-after" src="img/despues2.jpg" alt="Después" loading="lazy">
+          </div>
+          <div class="ba-handle"><span>‹ ›</span></div>
+        </div>
+        <p class="ba-caption">Sala con Panel MZ05-2 Nogal Medio</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIOS ================= -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">CLIENTES</span>
+      <h2 class="section-title">Lo que dicen de <em>nosotros</em></h2>
+    </div>
+  </div>
+
+  <div class="swiper testimonialsSwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Los paneles quedaron espectaculares. Instalación muy fácil y el acabado es premium. 100% recomendado."</p>
+          <div class="testimonial-author">
+            <div class="author-initial">M</div>
+            <div><strong>María Fernández</strong><span>La Paz</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Compré para mi constructora. Excelente calidad y precio. La atención por WhatsApp fue rapidísima."</p>
+          <div class="testimonial-author">
+            <div class="author-initial">C</div>
+            <div><strong>Carlos Rojas</strong><span>Santa Cruz</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"El piso SPC quedó perfecto en mi cocina. No se moja, no se mancha y se ve increíble."</p>
+          <div class="testimonial-author">
+            <div class="author-initial">A</div>
+            <div><strong>Andrea Quispe</strong><span>Cochabamba</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"El muro marmolado transformó mi sala. Parece mármol real pero a una fracción del precio."</p>
+          <div class="testimonial-author">
+            <div class="author-initial">J</div>
+            <div><strong>Javier Mendoza</strong><span>La Paz</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination testimonials-pagination"></div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="cta-final">
+  <div class="cta-bg" style="background-image:url('img/b067-living.jpg')"></div>
+  <div class="container cta-container">
+    <h2 class="cta-title reveal">Tu pared soñada está a un <em>mensaje</em> de distancia</h2>
+    <p class="cta-sub reveal">Enviános las medidas y te cotizamos en menos de 2 horas.</p>
+    <div class="cta-buttons reveal">
+      <a href="https://wa.me/59176715659?text=Hola,%20quiero%20cotizar%20un%20proyecto" target="_blank" class="btn btn-primary">Cotizar por WhatsApp</a>
+      <a href="#contacto" class="btn btn-ghost">Enviar formulario</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section class="section contact" id="contacto">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">CONTACTO</span>
+      <h2 class="section-title">Hablemos de tu <em>proyecto</em></h2>
+      <p class="section-sub">Respondemos en menos de 2 horas en horario comercial</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form" id="contactForm"
+              action="https://formspree.io/f/TU_CODIGO_FORMSPREE"
+              method="POST">
+          <input type="hidden" name="_subject" value="Nueva consulta desde Macuz Web">
+          <input type="hidden" name="_language" value="es">
+          <input type="text" name="_gotcha" style="display:none">
+
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" id="nombre" name="nombre" required placeholder=" ">
+              <label for="nombre">Nombre completo *</label>
+            </div>
+            <div class="form-field">
+              <input type="email" id="email" name="email" required placeholder=" ">
+              <label for="email">Email *</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <input type="tel" id="telefono" name="telefono" required placeholder=" ">
+              <label for="telefono">Teléfono / WhatsApp *</label>
+            </div>
+            <div class="form-field">
+              <input type="text" id="ciudad" name="ciudad" required placeholder=" ">
+              <label for="ciudad">Ciudad *</label>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <select id="consulta" name="consulta" required>
+              <option value="">Tipo de consulta *</option>
+              <option>Compra individual</option>
+              <option>Compra al por mayor</option>
+              <option>Instalación profesional</option>
+              <option>Asesoría técnica</option>
+              <option>Otro</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <select id="producto" name="producto">
+              <option value="">Producto de interés</option>
+              <option>Paneles Ripados WPC</option>
+              <option>Pisos SPC</option>
+              <option>Muros Marmolados PVC</option>
+              <option>Esquineros</option>
+              <option>Accesorios</option>
+              <option>Varios / No estoy seguro</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <textarea id="mensaje" name="mensaje" required placeholder=" " rows="4"></textarea>
+            <label for="mensaje">Mensaje / Descripción del proyecto *</label>
+          </div>
+
+          <label class="checkbox-field">
+            <input type="checkbox" required>
+            <span>Acepto la política de privacidad *</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-text">Solicitar cotización</span>
+            <span class="btn-loader"></span>
+          </button>
+
+          <p class="form-success" id="formSuccess">✅ ¡Mensaje enviado! Te contactamos en breve.</p>
+        </form>
+      </div>
+
+      <div class="contact-info reveal">
+
+        <div class="info-block">
+          <h3>Datos de contacto</h3>
+
+          <a href="https://wa.me/59176715659" target="_blank" rel="noopener" class="info-item">
+            <span class="info-icon">📱</span>
+            <div><strong>WhatsApp 1</strong><span>76715659</span></div>
+          </a>
+
+          <a href="https://wa.me/59176010569" target="_blank" rel="noopener" class="info-item">
+            <span class="info-icon">📱</span>
+            <div><strong>WhatsApp 2</strong><span>76010569</span></div>
+          </a>
+
+          <a href="mailto:macuzventasbo@gmail.com" class="info-item">
+            <span class="info-icon">📧</span>
+            <div><strong>Email</strong><span>macuzventasbo@gmail.com</span></div>
+          </a>
+
+          <a href="https://www.instagram.com/macuzimportaciones" target="_blank" rel="noopener" class="info-item">
+            <span class="info-icon">📷</span>
+            <div><strong>Instagram</strong><span>@macuzimportaciones</span></div>
+          </a>
+        </div>
+
+        <div class="info-block">
+          <h3>Horarios de atención</h3>
+          <div class="schedule">
+            <div class="schedule-row"><span>Lunes – Viernes</span><span>08:00 – 20:00</span></div>
+            <div class="schedule-row"><span>Sábado</span><span>09:00 – 18:00</span></div>
+            <div class="schedule-row"><span>Domingo</span><span>Solo WhatsApp</span></div>
+          </div>
+          <div class="status-badge" id="statusBadge">
+            <span class="status-dot"></span>
+            <span id="statusText">Verificando...</span>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <h3>Ubicación</h3>
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=TU_CODIGO_MAPS"
+              width="100%" height="220"
+              style="border:0; filter: invert(90%) hue-rotate(180deg);"
+              allowfullscreen loading="lazy"
+              title="Ubicación Macuz Importaciones"></iframe>
+          </div>
+          <a href="https://maps.app.goo.gl/TU_LINK_MAPS" target="_blank" rel="noopener" class="btn btn-small btn-outline">Cómo llegar →</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <div class="footer-col">
+      <div class="footer-logo">
+        <svg viewBox="0 0 60 60">
+          <polygon points="30,5 55,50 5,50" fill="#E10600"/>
+          <polygon points="30,20 45,45 15,45" fill="#0A0A0A"/>
+        </svg>
+        <div><strong>Macuz</strong><span>Importaciones</span></div>
+      </div>
+      <p class="footer-desc">Revestimientos WPC, pisos SPC y muros marmolados PVC de alta calidad. Envíos a todo Bolivia.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Productos</h4>
+      <a href="#productos">Paneles Ripados WPC</a>
+      <a href="#productos">Pisos SPC</a>
+      <a href="#productos">Muros Marmolados</a>
+      <a href="#productos">Esquineros</a>
+      <a href="#productos">Accesorios</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <a href="#inicio">Inicio</a>
+      <a href="#instalacion">Instalación</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <a href="https://wa.me/59176715659" target="_blank">📱 76715659</a>
+      <a href="https://wa.me/59176010569" target="_blank">📱 76010569</a>
+      <a href="mailto:macuzventasbo@gmail.com">📧 macuzventasbo@gmail.com</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Macuz Importaciones · Todos los derechos reservados</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/macuzimportaciones" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@macuzimportaciones" target="_blank">TikTok</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= WHATSAPP FLOTANTE ================= -->
+<a href="https://wa.me/59176715659?text=Hola%20Macuz,%20quiero%20informaci%C3%B3n"
+   target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+  <span class="whatsapp-ping"></span>
+</a>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
